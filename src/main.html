@@ -7,6 +7,8 @@
 <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"
 media="screen">
 <link href="../bootstrap/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+  <link rel="stylesheet" type="text/css" href="../bootstrap-calendar/src/css/bootstrap.calendar.css" />
+    <!-- jQuery and the Calendar plugin files -->
 </head>
 <body>
 
@@ -16,8 +18,7 @@ media="screen">
     <div class="span12">
       Sebastian (<a>ausloggen</a>)
       <div class="row">
-        <div class="span1">
-          Monate hier
+        <div class="span2" id ="calendar">
         </div>
         <div class="span9">
           <h1>Finanzverwaltung</h1>
@@ -66,5 +67,17 @@ media="screen">
     <script src="../bootstrap/js/bootstrap-collapse.js"></script>
     <script src="../bootstrap/js/bootstrap-carousel.js"></script>
     <script src="../bootstrap/js/bootstrap-typeahead.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js" ></script>
+    <script type="text/javascript" src="../bootstrap-calendar/src/bootstrap.calendar.js" ></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+          
+
+         $('#calendar').Calendar({'weekStart': 1 });
+      });
+
+    </script>
 </body>
 </html>
