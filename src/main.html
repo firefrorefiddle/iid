@@ -9,6 +9,7 @@ media="screen">
 <link href="../bootstrap/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
   <link rel="stylesheet" type="text/css" href="../bootstrap-calendar/src/css/bootstrap.calendar.css" />
   <link href="../datepicker/css/datepicker.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="extras.css"/>
     <!-- jQuery and the Calendar plugin files -->
 </head>
 <body>
@@ -25,8 +26,25 @@ media="screen">
         <div class="span9">
           <h1>Finanzverwaltung</h1>
 
-	  Fixkosten: EUR 724,98
-	  
+	  <div class="container-fluid">
+	    <div class="row">
+	      <div class="span6">
+		Fixkosten: EUR 724,98
+	      </div>
+	      <div class="span2">
+		<!-- Search Box copied from
+		http://forrst.com/posts/Fancy_search_box_using_Bootstrap_2_0-dG0
+		-->
+	        <div class='input-append'>
+		  <input placeholder="Search..." />
+		  <button class='btn add-on'>
+		  <i class="icon-search"></i>
+		  </button>
+		</div>		
+	      </div>
+	    </div>
+	  </div>
+
             <table class="table table-condensed">
 	      <tr>
           <th>Datum</th>
@@ -46,14 +64,52 @@ media="screen">
 
         </td><td/><td/><td/><td/><td/><td/><td><a>Hinzufügen</a></td></tr>
 	    </table>
-	  Geplant: EUR 95,00 (noch 27 Tage)
+
+	  <div class="container-fluid">
+	    <div class="row">
+	      <div class="span6">
+		Geplant: EUR 95,00 (noch 27 Tage)
+	      </div>
+	      <div class="span2">
+		<!-- Search Box copied from
+		http://forrst.com/posts/Fancy_search_box_using_Bootstrap_2_0-dG0
+		-->
+	        <div class='input-append'>
+		  <input placeholder="Search..." />
+		  <button class='btn add-on'>
+		  <i class="icon-search"></i>
+		  </button>
+		</div>		
+	      </div>
+	    </div>
+	  </div>
+	  
+	  
 	  
             <table class="table table-condensed">
 	      <tr><th>Datum</th><th>Währung</th><th>Betrag</th><th>Beschreibung</th><th>Kategorie</th><th>Person</th><th/<th/></tr>
 	      <tr><td>25.12.2012</td><td>EUR</td><td>400</td><td>Miete</td><td>Wohnen</td><td>ich</td><td><a>Bearbeiten</a></td><td><a>Löschen</a></td></tr>
 	      <tr><td/><td/><td/><td/><td/><td/><td/><td><a>Hinzufügen</a></td></tr>
-	    </table>	    
-	  Ausgegeben: EUR 100,0
+	    </table>
+	    
+	  <div class="container-fluid">
+	    <div class="row">
+	      <div class="span6">
+		Ausgegeben: 100 EUR
+	      </div>
+	      <div class="span2">
+		<!-- Search Box copied from
+		http://forrst.com/posts/Fancy_search_box_using_Bootstrap_2_0-dG0
+		-->
+	        <div class='input-append'>
+		  <input placeholder="Search..." />
+		  <button class='btn add-on'>
+		  <i class="icon-search"></i>
+		  </button>
+		</div>		
+	      </div>
+	    </div>
+	  </div>
 	  
             <table class="table table-condensed">
 	      <tr><th>Datum</th><th>Währung</th><th>Betrag</th><th>Beschreibung</th><th>Kategorie</th><th>Person</th><th/<th/></tr>

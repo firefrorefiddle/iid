@@ -1,0 +1,4 @@
+/* Search box stolen from http://forrst.com/posts/Fancy_search_box_using_Bootstrap_2_0-dG0 */
+.input-append button.add-on {
+    height: inherit !important;
+}
