@@ -13,6 +13,8 @@ Author:		Ramon
 
 - Modal searches + their respective UIs
 - Completion of base UI
+- repair broken date picker (what did I do to it?) (M.)
+- add consistent date formatting
 
 # DONE
 
