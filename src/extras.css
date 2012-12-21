@@ -2,3 +2,7 @@
 .input-append button.add-on {
     height: inherit !important;
 }
+
+.search-modal {
+	font-size: 24px;
+}

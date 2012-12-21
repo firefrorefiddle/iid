@@ -6,8 +6,8 @@
 <meta name="viewport" content="width=device-with, initial-scale="1.0">
 <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"
 media="screen">
+<link href="./extras.css" rel="stylesheet" media="screen">
 <link href="../bootstrap/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
-  <link rel="stylesheet" type="text/css" href="../bootstrap-calendar/src/css/bootstrap.calendar.css" />
   <link href="../datepicker/css/datepicker.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="extras.css"/>
     <!-- jQuery and the Calendar plugin files -->
@@ -23,13 +23,18 @@ media="screen">
 <!-- Button to trigger modal -->
  
 <!-- Modal -->
-<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" area-labelledby="myModalLabel" aria-hidden="true">
+  <!-- <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" area-hidden="true">X</button>
     <h3 id="myModalLabel">Modal header</h3>
-  </div>
+  </div> -->
   <div class="modal-body">
-    <p>Suchen Beispiel</p>
+    <div class="row">
+        <h3 class = "span2">Suchen nach: <h3>
+        <input class = "search-modal span3" placeholder='Search...'>
+    </div>
+    <div class = "row">
+    </div>
   </div>
   <div class="modal-footer">
     <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
@@ -61,18 +66,6 @@ media="screen">
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="../bootstrap/js/jquery.js"></script>
-    <script src="../bootstrap/js/bootstrap-transition.js"></script>
-    <script src="../bootstrap/js/bootstrap-alert.js"></script>
-    <script src="../bootstrap/js/bootstrap-modal.js"></script>
-    <script src="../bootstrap/js/bootstrap-dropdown.js"></script>
-    <script src="../bootstrap/js/bootstrap-scrollspy.js"></script>
-    <script src="../bootstrap/js/bootstrap-tab.js"></script>
-    <script src="../bootstrap/js/bootstrap-tooltip.js"></script>
-    <script src="../bootstrap/js/bootstrap-popover.js"></script>
-    <script src="../bootstrap/js/bootstrap-button.js"></script>
-    <script src="../bootstrap/js/bootstrap-collapse.js"></script>
-    <script src="../bootstrap/js/bootstrap-carousel.js"></script>
-    <script src="../bootstrap/js/bootstrap-typeahead.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js" ></script>
     <script type="text/javascript" src="../bootstrap-calendar/src/bootstrap.calendar.js" ></script>
     <script type="text/javascript" src="../datepicker/js/bootstrap-datepicker.js" ></script>
