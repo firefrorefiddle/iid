@@ -14,6 +14,9 @@ Author:		Ramon
 - Modal searches + their respective UIs
 - Completion of base UI
 - add consistent date formatting
+- allow weekend days to be picked
+- make bearbeiten and löschen work
+- change data based on date/month (is this necessary for now?)
 
 # DONE
 
