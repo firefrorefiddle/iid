@@ -4,6 +4,27 @@ function init_table(topElemName, name)
     document.getElementById(topElemName).innerHTML = table_basic_layout(name).html();
 }
 
+function table_insert_row(name, 
+			  datum, 
+			  waehrung,
+			  betrag, 
+			  beschreibung, 
+			  kategorie,
+			  person)
+{
+    newRow = $("\
+<tr>\
+  <td>"+datum+"</td>\
+  <td>"+waehrung+"</td>\
+  <td>"+betrag+"</td>\
+  <td>"+beschreibung+"</td>\
+  <td>"+kategorie+"</td>\
+  <td>"+person+"</td>\
+</tr>");
+    
+    $("#"+name+"-inputRow").before(newRow);
+}
+
 function table_basic_layout(name)
 {
 

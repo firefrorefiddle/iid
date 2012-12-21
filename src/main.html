@@ -112,9 +112,42 @@ media="screen">
   </script>
 
   <script>
-    init_table("fixkosten-table-tl", "Fixkosten");
-    init_table("geplant-table-tl", "Geplant");
-    init_table("ausgegeben-table-tl", "Ausgegeben");
+init_table("fixkosten-table-tl", "Fixkosten");
+init_table("geplant-table-tl", "Geplant");
+init_table("ausgegeben-table-tl", "Ausgegeben");
+
+// demo data
+table_insert_row("Fixkosten",
+"01.12.2012",
+"EUR",
+"400,00",
+"Miete",
+"Wohnen",
+"ich");
+table_insert_row("Fixkosten",
+"01.12.2012",
+"EUR",
+"21,00",
+"Internet",
+"Wohnen",
+"ich");
+
+table_insert_row("Geplant",
+"07.12.2012",
+"EUR",
+"150,00",
+"Essen",
+"Lebensmittel",
+"Selena");
+
+table_insert_row("Ausgegeben",
+"03.12.2012",
+"EUR",
+"79,98",
+"Externe Festplatte",
+"Anschaffungen",
+"ich");
+
   </script>
 </body>
 </html>
