@@ -67,6 +67,9 @@ function table_insert_from_input(name)
         $("#"+name+"-add-beschreibung").val(),
         $("#"+name+"-add-kategorie").val(),
         $("#"+name+"-add-person").val());
+
+    $("#"+name+"-add-betrag").val("");
+    $("#"+name+"-add-beschreibung").val("");
 }
 
 function table_basic_layout(name)
@@ -76,7 +79,7 @@ function table_basic_layout(name)
   // http://forrst.com/posts/Fancy_search_box_using_Bootstrap_2_0-dG0 
 
     return $("\
-<div id='"+name+"-table'>\
+<div id='"+name+"-table' class='main-table'>\
 <div class='container-fluid'>\
   <div class='row'>\
     <div class='span1'>"+name+":\</div>\
