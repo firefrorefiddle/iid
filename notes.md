@@ -11,7 +11,7 @@ Author:		Ramon
 
 # TODO
 
-- Modal searches + their respective UIs
+- Completion of search UI
 - Completion of base UI
 - add consistent date formatting
 - allow weekend days to be picked
@@ -21,3 +21,4 @@ Author:		Ramon
 # DONE
 
 - Add input validation (M.)
+- Add modal popups upon search (R.)

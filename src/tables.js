@@ -89,7 +89,7 @@ function table_basic_layout(name)
     <div class='span2'>\
       <div class='input-append'>\
         <input placeholder='Search...'>\
-        <button class='btn add-on'>\
+        <button class='btn add-on' href='#myModal' data-toggle='modal'>\
           <i class='icon-search'></i>\
         </button>\
       </div>\
