@@ -48,6 +48,27 @@ function table_insert_row(name,
     $("#"+name+"-inputRow").before(newRow);
 }
 
+function check_submit(name, event)
+{
+    // thanks to stackoverflow question 29943
+    if(event && event.keyCode == 13)
+    {
+	table_insert_from_input(name);
+    }
+}
+
+function table_insert_from_input(name)
+{
+    table_insert_row(
+	name,
+	$("#"+name+"-add-date").val(),
+        $("#"+name+"-add-waehrung").val(),
+        $("#"+name+"-add-betrag").val(),
+        $("#"+name+"-add-beschreibung").val(),
+        $("#"+name+"-add-kategorie").val(),
+        $("#"+name+"-add-person").val());
+}
+
 function table_basic_layout(name)
 {
 
@@ -80,7 +101,7 @@ function table_basic_layout(name)
   <th>Person</th>\
   <th/><th/>\
 </tr>\
-<tr id='"+name+"-inputRow'>\
+<tr id='"+name+"-inputRow'  onKeyPress='JavaScript:check_submit(\""+name+"\", event);'>\
   <form>\
     <td>\
       <div class='input-append date' data-date='12-02-2012' data-date-format='dd-mm-yyyy'>\
@@ -114,16 +135,8 @@ function table_basic_layout(name)
         <option value='Selena'>Selena</option>\
       </select>\
     </td>\
-    <td/><td><a \
-             onClick='JavaScript:table_insert_row(\
-               \""+name+"\",\
-               $(\"#"+name+"-add-date\").val(),\
-               $(\"#"+name+"-add-waehrung\").val(),\
-               $(\"#"+name+"-add-betrag\").val(),\
-               $(\"#"+name+"-add-beschreibung\").val(),\
-               $(\"#"+name+"-add-kategorie\").val(),\
-               $(\"#"+name+"-add-person\").val()\
-             );'>Hinzufügen</a></td>\
+    <td/><td><input type='submit' value='Hinzufügen' \
+             onClick='JavaScript:table_insert_from_input(\""+name+"\");'></td>\
   </form>\
 </tr>\
 </table>\
