@@ -136,7 +136,10 @@ function table_basic_layout(name)
     </td>\
     <td>\
       <select name='sel' class='span1' id='"+name+"-add-person'>\
-        <option value='ich'>ich</option>\
+        <option value='Sebastian'>ich</option>\
+        <option value='Helga'>Helga</option>\
+        <option value='Sonja'>Sonja</option>\
+        <option value='Ralf'>Ralf</option>\
         <option value='Selena'>Selena</option>\
       </select>\
     </td>\
