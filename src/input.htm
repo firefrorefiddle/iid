@@ -1,0 +1,77 @@
+<DOCTYPE html>
+<html>
+<head>
+<title>Einfügen</title>
+<!-- Bootstrap -->
+<meta name="viewport" content="width=device-with, initial-scale=1.0">
+<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="../bootstrap/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+<link href="../datepicker/css/datepicker.css" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="extras.css"/>
+<link href="input.css" rel="stylesheet">
+    <!-- jQuery and the Calendar plugin files -->
+</head>
+
+<body>
+  <form>
+  <br>
+	<p>
+	  	<label>Beschreibung: </label>
+	  	<input type="text" >
+	</p>
+	<p>
+	  <label>Datum:</label>
+	  <div class="input-append date" id="dp3" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+                <input class="span2" size="16" type="text" value="12-02-2012" readonly>
+                <span class="add-on"><i class="icon-calendar"></i></span>
+      </div>
+   </p>
+	<p>
+	  	<label> Währung: </label>
+		<select>
+   		<option value="EUR">EUR</option>
+          <option value="USD">USD</option>
+          <option value="GBP">GBP</option>
+          <option value="CAD">CAD</option>
+		</select>
+	</p>
+	<p>
+		<label>Betrag:</label> 
+		<input type="text" value="0.0">
+	</p>
+	<p>	
+		<label>Kategorie:</label> 	
+		<select>
+			<option value="Wohnen">Wohnen</option>
+         <option value="Lebensmittel">Lebensmittel</option>
+         <option value="Kultur">Kultur</option>
+         <option value="Reisen">Reisen</option>
+		</select>
+	 </p>
+	 <p>
+		<label>Ausgabetyp:</label> 
+		<select>
+	   	<option value="Fixkosten">Fixkosten</option>
+         <option value="variable Kosten">variable Kosten </option>
+		</select>
+	 </p>
+ 	<p>
+		<label>Aufteilen </label>
+		<input type="checkbox" name="Aufteilen" /> 
+	</p>
+	<p>	
+		<label>von </label> 
+		<input type="text" value="26/12/2012">    bis <input type="text" value="26/02/2013"> 
+	</p>
+ 	<div class="span3" align="right">
+		<input type="submit" name="Erfassen" value="Erfassen"/>
+	</div>
+	<div class="span3"> 
+		<input type="submit" name="Beenden" value="Beenden" />
+	</div>
+</form> 
+	  
+	
+</body>
+</html>
