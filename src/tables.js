@@ -89,7 +89,7 @@ function table_basic_layout(name)
     <div class='span2'>\
       <div class='input-append'>\
         <input placeholder='Search...'>\
-        <button class='btn add-on'>\
+        <button class='btn add-on' href='#myModal' data-toggle='modal'>\
           <i class='icon-search'></i>\
         </button>\
       </div>\
@@ -109,8 +109,8 @@ function table_basic_layout(name)
 <tr id='"+name+"-inputRow'  onKeyPress='JavaScript:check_submit(\""+name+"\", event);'>\
   <form>\
     <td>\
-      <div class='input-append date' id='dp3' data-date='12-02-2012' data-date-format='dd-mm-yyyy'>\
-        <input class='span2' id='"+name+"-add-date' size='16' type='text' value='12-02-2012' readonly>\
+      <div class='input-append date' id='dp3' data-date='12.02.2012' data-date-format='dd.mm.yyyy'>\
+        <input class='span2' id='"+name+"-add-date' size='16' type='text' value='12.02.2012' readonly>\
         <span class='add-on'><i class='icon-calendar'></i></span>\
       </div>\
     </td>\
