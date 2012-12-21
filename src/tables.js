@@ -43,6 +43,8 @@ function table_insert_row(name,
   <td>"+beschreibung+"</td>\
   <td>"+kategorie+"</td>\
   <td>"+person+"</td>\
+  <td><input type='button' value='Bearbeiten'></td>\
+  <td><input type='button' value='Löschen'></td>\
 </tr>");
     
     $("#"+name+"-inputRow").before(newRow);
@@ -94,7 +96,7 @@ function table_basic_layout(name)
     </div> <!-- span2 -->\
   </div>   <!-- row -->\
 </div>     <!-- search box container -->\
-<table class='table table-condensed'>\
+<table class='table table-condensed table-striped table-bordered'>\
 <tr>\
   <th>Datum</th>\
   <th>Währung</th>\
