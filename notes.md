@@ -18,10 +18,12 @@ Author:		Ramon
 - Stats page
 - Actual search functionality (As above, is this necessary?)
 - Clean up modal input for Anschaffung plannen
+- Table sorting (even if it is just a visual addition - points!)
 
 # DONE
 
 - Add input validation (M.)
 - Add modal popups upon search (R.)
 - Completion of search UI (R.)
+- Integrate input.html into modal on main site(R.)
 - add consistent date formatting (R.)
