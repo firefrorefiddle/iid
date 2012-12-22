@@ -17,6 +17,7 @@ Author:		Ramon
 - change data based on date/month (is this necessary for now?)
 - Stats page
 - Actual search functionality (As above, is this necessary?)
+- Clean up modal input for Anschaffung plannen
 
 # DONE
 
