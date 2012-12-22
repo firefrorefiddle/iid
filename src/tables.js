@@ -59,6 +59,21 @@ function check_submit(name, event)
     }
 }
 
+function check_open_search_modal(name, event)
+{
+    // thanks to stackoverflow question 29943
+    if(event && event.keyCode == 13)
+    {
+	alert("Modal search dialog opens here in production code. For now, click the button!");
+    }
+}
+
+function fill_modal_search(name)
+{
+    val=$("#"+name+"-search").val();
+    $(".search-modal").val(val);
+}
+
 function table_insert_from_input(name)
 {
     table_insert_row(
@@ -88,8 +103,12 @@ function table_basic_layout(name)
     <div class='span5'>EUR 0,00</div>\
     <div class='span2'>\
       <div class='input-append'>\
-        <input placeholder='Suchen...'>\
-        <button class='btn add-on' href='#myModal' data-toggle='modal'>\
+        <input placeholder='Suchen...' id='"+name+"-search' onKeyPress='JavaScript:check_open_search_modal(\""+name+"\", event);'>\
+        <button class='btn add-on' \
+                id='"+name+"-search-button'\
+                href='#myModal' \
+                onClick='JavaScript:fill_modal_search(\""+name+"\");' \
+                data-toggle='modal'>\
           <i class='icon-search'></i>\
         </button>\
       </div>\
