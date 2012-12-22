@@ -59,6 +59,15 @@ function check_submit(name, event)
     }
 }
 
+function hide_input_row(name) {
+  document.getElementById(name+"-inputRow").style.display= 'none';
+}
+
+function hide_search_row(name) {
+  document.getElementById(name+"-search").style.display= 'none';
+  document.getElementById(name+"-search-button").style.display= 'none';
+}
+
 function check_open_search_modal(name, event)
 {
     // thanks to stackoverflow question 29943
@@ -130,7 +139,7 @@ function table_basic_layout(name)
     <td>\
       <div class='input-append date' id='dp3' data-date='12.02.2012' data-date-format='dd.mm.yyyy'>\
         <input class='span2' id='"+name+"-add-date' size='16' type='text' value='12.02.2012' readonly>\
-        <span class='add-on'><i class='icon-calendar'></i></span>\
+        <span class='add-on' id ='"+name+"-add-on'><i class='icon-calendar'></i></span>\
       </div>\
     </td>\
     <td>\

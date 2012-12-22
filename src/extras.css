@@ -6,3 +6,8 @@
 .search-modal {
 	font-size: 24px;
 }
+
+.bigModal{
+   width:940px;
+   margin-left:-470px;
+}
