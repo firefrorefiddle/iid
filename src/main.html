@@ -7,6 +7,7 @@
 <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"
 media="screen">
 <link href="./extras.css" rel="stylesheet" media="screen">
+<link href="input.css" rel="stylesheet">
 <link href="../bootstrap/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
   <link href="../datepicker/css/datepicker.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="extras.css"/>
@@ -21,6 +22,67 @@ media="screen">
 <body>
 
 <!-- Button to trigger modal -->
+
+<div id="input-modal" class="modal hide fade inputModal" tabindex="-1" role="dialog" area-labelledby="myModalLabel" aria-hidden="true">
+  <div class = "modal-body">
+
+    <button type="button" class="close" data-dismiss="modal" area-hidden="true">X</button>
+    <form>
+  <br>
+  <p>
+      <label>Beschreibung: </label>
+      <input type="text" >
+  </p>
+  <p>
+    <label>Datum:</label>
+    <div class="input-append date" id="dp3" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+                <input class="span2" size="16" type="text" value="12-02-2012" readonly>
+                <span class="add-on"><i class="icon-calendar"></i></span>
+      </div>
+   </p>
+  <p>
+      <label> Währung: </label>
+    <select>
+      <option value="EUR">EUR</option>
+          <option value="USD">USD</option>
+          <option value="GBP">GBP</option>
+          <option value="CAD">CAD</option>
+    </select>
+  </p>
+  <p>
+    <label>Betrag:</label> 
+    <input type="text" value="0.0">
+  </p>
+  <p> 
+    <label>Kategorie:</label>   
+    <select>
+      <option value="Wohnen">Wohnen</option>
+         <option value="Lebensmittel">Lebensmittel</option>
+         <option value="Kultur">Kultur</option>
+         <option value="Reisen">Reisen</option>
+    </select>
+   </p>
+   <p>
+    <label>Ausgabetyp:</label> 
+    <select>
+      <option value="Fixkosten">Fixkosten</option>
+         <option value="variable Kosten">variable Kosten </option>
+    </select>
+   </p>
+  <p>
+    <label>Aufteilen </label>
+    <input type="checkbox" name="Aufteilen" /> 
+  </p>
+  <p> 
+    <label>von </label> 
+    <input type="text" value="26/12/2012">    bis <input type="text" value="26/02/2013"> 
+  </p>
+  <div class="span3" align="right">
+    <input type="submit" name="Erfassen" value="Erfassen"/>
+  </div>
+</form> 
+  </div>
+</div>
  
 <!-- Modal -->
 <div id="myModal" class="modal hide fade bigModal" tabindex="-1" role="dialog" area-labelledby="myModalLabel" aria-hidden="true">
@@ -82,6 +144,10 @@ media="screen">
 <div class="progress">
   <div class="bar" style="width: 60%;"></div>
 </div>
+<button class='btn offset3' 
+                id='"+name+"-search-button'
+                href='#input-modal'
+                data-toggle='modal'>Anschaffung planen</button>
 <div id="fixkosten-table-tl" class="main-table"></div>
 <div id="geplant-table-tl" class="main-table"></div>
 <div id="ausgegeben-table-tl" class="main-table"></div>
