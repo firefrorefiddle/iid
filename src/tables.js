@@ -88,7 +88,7 @@ function table_basic_layout(name)
     <div class='span5'>EUR 0,00</div>\
     <div class='span2'>\
       <div class='input-append'>\
-        <input placeholder='Search...'>\
+        <input placeholder='Suchen...'>\
         <button class='btn add-on' href='#myModal' data-toggle='modal'>\
           <i class='icon-search'></i>\
         </button>\
