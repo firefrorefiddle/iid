@@ -43,8 +43,8 @@ function table_insert_row(name,
   <td>"+beschreibung+"</td>\
   <td>"+kategorie+"</td>\
   <td>"+person+"</td>\
-  <td><input type='button' value='Bearbeiten'></td>\
-  <td><input type='button' value='Löschen'></td>\
+  <td><a class='btn'>Bearbeiten</td>\
+  <td><a class='btn'>Löschen</td>\
 </tr>");
     
     $("#"+name+"-inputRow").before(newRow);
@@ -162,7 +162,7 @@ function table_basic_layout(name)
         <option value='Selena'>Selena</option>\
       </select>\
     </td>\
-    <td/><td><input type='submit' value='Hinzufügen' \
+    <td/><td><input type='submit' class='btn' value='Hinzufügen' \
              onClick='JavaScript:table_insert_from_input(\""+name+"\");'></td>\
   </form>\
 </tr>\
