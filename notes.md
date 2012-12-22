@@ -11,14 +11,16 @@ Author:		Ramon
 
 # TODO
 
-- Completion of search UI
 - Completion of base UI
-- add consistent date formatting
 - allow weekend days to be picked
 - make bearbeiten and löschen work
 - change data based on date/month (is this necessary for now?)
+- Stats page
+- Actual search functionality (As above, is this necessary?)
 
 # DONE
 
 - Add input validation (M.)
 - Add modal popups upon search (R.)
+- Completion of search UI (R.)
+- add consistent date formatting (R.)
