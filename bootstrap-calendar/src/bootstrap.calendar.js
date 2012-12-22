@@ -33,10 +33,10 @@
 
         defaults = {
             weekStart: 1,
-            msg_days: ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"],
-            msg_months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-            msg_today: 'Today',
-            msg_events_header: 'Events Today',
+            msg_days: ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"],
+            msg_months: ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"],
+            msg_today: 'Heute',
+            msg_events_header: 'Heutige Termine',
             events: null
         },
 
