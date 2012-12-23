@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Finanzverwaltung</title>
+<!-- Bootstrap -->
+<meta name="viewport" content="width=device-with, initial-scale=1.0">
+<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="./extras.css" rel="stylesheet" media="screen">
+
+<link href="../bootstrap/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+  <link href="../datepicker/css/datepicker.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="extras.css"/>
+    <!-- jQuery and the Calendar plugin files -->
+
+<style type="text/css">
+.main-table { 
+    margin-bottom: 50px;
+}
+</style>
+</head>
+<body>
+<h1 align="center">Statistik</h1>
+
+<div class="container-fluid">
+	<div class="row">
+	<div  class="span3">
+  <p>
+    <label>Von:</label>
+    <div class="input-append date" id="dp3" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+                <input class="span2" size="16" type="text" value="12-02-2012" readonly>
+                <span class="add-on"><i class="icon-calendar"></i></span>
+      </div>
+   </p>
+ <p>
+    <label>Bis:</label>
+    <div class="input-append date" id="dp4" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+                <input class="span2" size="16" type="text" value="12-12-2012" readonly>
+                <span class="add-on"><i class="icon-calendar"></i></span>
+      </div>
+   </p>   
+   
+  <p>
+    <label> Buchungen: </label>
+    <select>
+	      <option value="Alle Buchungen">Alle Buchungen</option>
+	      
+   	    <option value="Alle Ausgaben">Alle Ausgaben </option>
+          <option value="Fixkosten">Fixe Ausgaben</option>
+          <option value="Variable Ausgaben">Variable Ausgaben</option>
+          
+          <option value="Alle Erträge">Alle Erträge</option>
+          <option value="Fixerträge">Fixerträge</option>
+          <option value="Variable Erträge">Variable Erträge</option>
+           
+           
+          <option value="Vergleich Plan/Wirklichkeit">Vergleich Plan/Wirklichkeit</option>
+    </select>
+     <p>
+      <label>Mediumtyp:  </label>
+      <select>
+      	<option value="Diagram">Diagram</option>
+      	<option value="Tafel">Tafel</option>
+      	<option value="Bericht">Bericht</option>
+      </select>
+  </p>
+  <div class="span3" align="left">
+  
+  <input type="submit" name="Statistik" value="Statistik erstellen" />
+  </div>
+  
+    
+    
+  </p>
+
+
+
+</div>
+
+
+
+	<div class="span8">
+		<img border="0" src="../images/s3.gif" alt="Alle Erträge" width="800" height="600">
+	</div>
+</div>
+</div>
+  
+<script src="../jquery/jquery.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+   <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../bootstrap/js/jquery.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js" ></script>
+    <script type="text/javascript" src="../bootstrap-calendar/src/bootstrap.calendar.js" charset="utf8"></script>
+    <script type="text/javascript" src="../datepicker/js/bootstrap-datepicker.js" ></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+          
+
+         $('#calendar').Calendar({'weekStart': 1 });
+      });
+
+    </script>
+
+    <script>
+    $(function(){
+      window.prettyPrint && prettyPrint();
+      $('#dp1').datepicker({
+        format: 'dd.mm.yyyy'
+      });
+      $('#dp2').datepicker();
+      $('#dp3').datepicker();
+      $('#dp4').datepicker();
+      $('#dpYears').datepicker();
+      $('#dpMonths').datepicker();
+      
+    });
+  </script>
+
+ 
+  
+  <footer>
+  <div class="span12" style="text-align: center"> 
+  <p>&copy Gruppe 16</p>
+  <p>Interface & Interaction Design</p>
+  <p>TU Wien</p>
+  </div>
+  
+
+</footer>
+</body>
+</html>
