@@ -126,12 +126,12 @@ function table_basic_layout(name)
 </div>     <!-- search box container -->\
 <table class='table table-condensed table-striped table-bordered'>\
 <tr>\
-  <th>Datum</th>\
-  <th>Währung</th>\
-  <th>Betrag</th>\
-  <th>Beschreibung</th>\
-  <th>Kategorie</th>\
-  <th>Person</th>\
+  <th>Datum &and;&or;</th>\
+  <th>Währung &and;&or;</th>\
+  <th>Betrag &and;&or;</th>\
+  <th>Beschreibung &and;&or;</th>\
+  <th>Kategorie &and;&or;</th>\
+  <th>Person &and;&or;</th>\
   <th/><th/>\
 </tr>\
 <tr id='"+name+"-inputRow'  onKeyPress='JavaScript:check_submit(\""+name+"\", event);'>\
