@@ -33,25 +33,57 @@ function table_insert_row(name,
 			  person)
 {
     if(!validate_input(datum, waehrung, betrag, beschreibung, kategorie, person))
-	return;
+	return;    
 
+    betrag = parseFloat(betrag).toFixed(2);
+    
     newRow = $("\
 <tr>\
   <td>"+datum+"</td>\
   <td>"+waehrung+"</td>\
-  <td>"+parseFloat(betrag).toFixed(2)+"</td>\
+  <td>"+betrag+"</td>\
   <td>"+beschreibung+"</td>\
   <td>"+kategorie+"</td>\
   <td>"+person+"</td>\
-  <td><a class='btn'>Bearbeiten</td>\
-  <td><a class='btn'>Löschen</td>\
+  <td><a class='btn bearb-btn'>Bearbeiten</td>\
+  <td><a class='btn del-btn'>Löschen</td>\
 </tr>");
+
+    newRow.find(".del-btn").click(function() {
+	adjust_sum(name, "-"+betrag);
+	adjust_budget("-"+betrag);
+	$(this).parent().parent().remove();
+    });
     
     $("#"+name+"-inputRow").before(newRow);
 
+    adjust_sum(name, betrag);
+    adjust_budget(betrag);
+}
+
+function adjust_sum(name, betrag)
+{
     old_sum = parseFloat($("#"+name+"-sum").contents().text());
     new_sum = (old_sum + parseFloat(betrag)).toFixed(2);
     $("#"+name+"-sum").text(new_sum);
+}
+
+
+function adjust_budget(betrag)
+{
+    available = parseFloat($("#total-available").contents().text());
+    budget = parseFloat($("#total-budget").contents().text());
+    new_av = (available - parseFloat(betrag)).toFixed(2);
+    $("#total-available").text(new_av);
+
+    max_prog = parseInt($("#progress-bar").css("max-width").replace( /\D+/g, ''));
+    cur_prog = parseInt($("#progress-bar").css("width").replace( /\D+/g, ''));
+
+    perc = (budget-parseFloat(new_av))/budget;
+    new_prog = Math.round(perc*max_prog);
+    
+    $("#progress-bar").css("width", Math.round(new_prog)+"px");
+
 }
 
 function check_submit(name, event)

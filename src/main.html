@@ -152,7 +152,11 @@ media="screen">
         <div class="span9">
           <h1>Finanzverwaltung</h1> 
 <div class="progress">
-  <div class="bar" style="width: 60%;"><span class = "span3">Budget: EUR 1353,00 <a class="progress-link">Bearbeiten</a> <a class="progress-link">Details</a></span> Verf&#252;gbar: EUR 700,00</div>
+  <div class="bar" id="progress-bar" style="width: 60%;max-width:100%"><span class = "span3">Budget:
+        EUR <span id="total-budget">1353.00</span> <a
+        class="progress-link">Bearbeiten</a> <a
+        class="progress-link">Details</a></span> Verf&#252;gbar: EUR  <span
+        id="total-available">1353.00</span></div>
 </div>
 <button class='btn offset3' 
                 id='"+name+"-search-button'
