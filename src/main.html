@@ -11,6 +11,7 @@ media="screen">
 <link href="../bootstrap/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
   <link href="../datepicker/css/datepicker.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="extras.css"/>
+<link rel="stylesheet" type="text/css" href="stat.css"/>
     <!-- jQuery and the Calendar plugin files -->
 
 <style type="text/css">
@@ -26,7 +27,6 @@ media="screen">
 <div id="input-modal" class="modal hide fade inputModal" tabindex="-1" role="dialog" area-labelledby="myModalLabel" aria-hidden="true">
   <div class = "modal-body">
 
-    <button type="submit" class="close" data-dismiss="modal" area-hidden="true"><span style="font-family: wingdings; font-size: 200%;">&#252;</span></button> 
     <button type="button" class="close" data-dismiss="modal" area-hidden="true">X</button>
     <form>
   <p>
@@ -134,7 +134,14 @@ media="screen">
     <div class="span12">
       Sebastian (<a href="login.html">ausloggen</a>)
       <div class="row">
-        <div class="span2" id ="calendar">
+	<div class="span2">
+          <div id ="calendar">
+	  </div>
+	  <div id="ministat">
+	  </div>
+	  <a id="statbutton" class="btn" href="#" onClick="alert('Die Statistikseite\
+  ist nicht so interessant und deshalb nicht implementiert');">Statistiken</a>
+
         </div>
         <div class="span9">
           <h1>Finanzverwaltung</h1>
@@ -190,6 +197,8 @@ media="screen">
   </script>
 
   <script src="tables.js" charset="utf8">
+  </script>
+  <script src="stat.js" charset="utf8">
   </script>
 
   <script>

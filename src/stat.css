@@ -1,0 +1,7 @@
+.bar-fix { background-color:#0066BB; margin-left:0px; margin-right:0px }
+.bar-var { background-color:#559999; margin-left:0px; margin-right:0px }
+.bar-plan { background-color:#AAAAFF; margin-left:0px; margin-right:0px }
+.bar { float:left; margin-left:0px; margin-right:0px }
+
+#ministat { margin-top:20px}
+#statbutton { margin-top:10px}

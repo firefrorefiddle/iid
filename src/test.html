@@ -1,0 +1,28 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="utf-8">
+   <title>jQuery demo</title>
+ </head>
+ <body>
+   <a class="hide" href="http://jquery.com/">jQuery</a>
+   <a class="mainlink" href="">main matter</a>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+   <script>
+     $(document).ready(function(){
+       $("a.hide").click(function(event){
+         event.preventDefault();
+         $(this).hide("quick");
+       });
+      $("a.mainlink").click(function(event)
+        {
+          event.preventDefault();
+          $.get("main.html", function(res)
+                             {
+                                alert(res.docType);
+                             })
+        });
+     });
+   </script>
+ </body>
+ </html>
