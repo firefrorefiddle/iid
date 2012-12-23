@@ -109,7 +109,7 @@ function table_basic_layout(name)
 <div class='container-fluid'>\
   <div class='row'>\
     <div class='span1'>"+name+":\</div>\
-    <div class='span5'>EUR 0,00</div>\
+    <div class='span5'>EUR 0,00 &rsaquo;</div>\
     <div class='span2'>\
       <div class='input-append'>\
         <input placeholder='Suchen...' id='"+name+"-search' onKeyPress='JavaScript:check_open_search_modal(\""+name+"\", event);'>\
